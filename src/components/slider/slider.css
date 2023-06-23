@@ -13,3 +13,9 @@
 .sofson__promotions_slider-container img {
     width: 100%;
 }
+
+@media screen and (max-width: 1050px) {
+    .sofson__promotions_slider {
+        margin-bottom: 1rem;
+    }
+}

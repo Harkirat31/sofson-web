@@ -7,7 +7,7 @@ import logo from '../../assets/logo.png'
 
 const Navbar = () => {
     return (
-        <div className='sofson__navbar'>
+        <div className='sofson__navbar section__padding'>
             <div className='sofson__navbar-links'>
                 <div className='sofson__navbar-links_logo'>
                     <img src={logo} alt='logo'></img>

@@ -1,6 +1,11 @@
 .sofson__promotions {
     display: flex;
-    padding: 1rem 12rem;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 1050px) {
+    .sofson__promotions {
+        flex-direction: column;
+    }
 }
