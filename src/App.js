@@ -1,20 +1,25 @@
 import React from 'react'
 import './App.css'
 
-import { Navbar, Trial } from './components'
-import { Promotions, SubCategory } from './container'
+import Home from './pages/Home'
+import { Routes, Route } from 'react-router-dom'
+import Account from './pages/Account'
+import Cart from './pages/Cart'
+import Category from './pages/Category'
+import Product from './pages/Product'
+import Login from './pages/Login'
+
 
 const App = () => {
     return (
-        <div>
-            <Navbar></Navbar>
-            <Promotions></Promotions>
-            <Trial></Trial>
-            <SubCategory name="Value Pack"></SubCategory>
-            <SubCategory name="Products"></SubCategory>
-            <SubCategory name="Refills"></SubCategory>
-            <SubCategory name="House of Fragrances"></SubCategory>
-        </div>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/account" element={<Account />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/about" element={<Category />} />
+            <Route path="/courses" element={<Product />} />
+            <Route path="/login" element={<Login />} />
+        </Routes>
     )
 }
 

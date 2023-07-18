@@ -2,10 +2,13 @@ import React from 'react'
 import './navbar.css'
 import { useState } from 'react'
 import { RiMenu3Line, RiCloseLine, } from 'react-icons/ri'
+
 import { IoCart } from 'react-icons/io5'
 import logo from '../../assets/logo.png'
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
+    const navigate = useNavigate();
     return (
         <div className='sofson__navbar section__padding'>
             <div className='sofson__navbar-links'>
@@ -18,7 +21,7 @@ const Navbar = () => {
                     <p>Cart </p>
                     <IoCart color='#fff' size={30} />
                 </div>
-                <button type='button'>Login</button>
+                <button type='button' onClick={() => navigate('login')}>Login</button>
 
             </div>
         </div>
