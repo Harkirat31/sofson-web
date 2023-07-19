@@ -4,16 +4,18 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './product_slider.css'
 import { BsCurrencyRupee } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom'
 
 
 const ProductSlider = (props) => {
+    const navigate = useNavigate();
     return (
         <div class="scroll-container">
             <div class="scroll-content">
                 {
                     Array.from(props.products).map((element, index) => {
                         return (
-                            <div className="product_slider_child">
+                            <div onClick={() => navigate('/product')} className="product_slider_child">
                                 <img src='https://firebasestorage.googleapis.com/v0/b/kullu-ecommerce.appspot.com/o/ABGC004?alt=media&token=d50f7077-8070-45e6-b2c0-e25e1fdafddb'></img>
                                 <p className="product_slider_child_title">{element.title}</p>
                                 <div className="product_slider_child_price">

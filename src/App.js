@@ -8,18 +8,23 @@ import Cart from './pages/Cart'
 import Category from './pages/Category'
 import Product from './pages/Product'
 import Login from './pages/Login'
+import { Navbar } from './components'
 
 
 const App = () => {
     return (
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/account" element={<Account />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/about" element={<Category />} />
-            <Route path="/courses" element={<Product />} />
-            <Route path="/login" element={<Login />} />
-        </Routes>
+        <>
+            <Navbar></Navbar>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/account" element={<Account />} />
+                <Route path="/cart" element={<Cart />} />
+                <Route path="/category" element={<Category />} />
+                <Route path="/product" element={<Product />} />
+                <Route path="/login" element={<Login />} />
+            </Routes>
+        </>
     )
 }
 

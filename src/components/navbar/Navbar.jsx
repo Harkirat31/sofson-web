@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom'
 const Navbar = () => {
     const navigate = useNavigate();
     return (
-        <div className='sofson__navbar section__padding'>
+        <div onClick={() => navigate('/home')} className='sofson__navbar section__padding'>
             <div className='sofson__navbar-links'>
                 <div className='sofson__navbar-links_logo'>
                     <img src={logo} alt='logo'></img>
@@ -21,7 +21,7 @@ const Navbar = () => {
                     <p>Cart </p>
                     <IoCart color='#fff' size={30} />
                 </div>
-                <button type='button' onClick={() => navigate('login')}>Login</button>
+                <button type='button' onClick={() => navigate('/login')}>Login</button>
 
             </div>
         </div>

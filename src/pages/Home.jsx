@@ -6,7 +6,6 @@ import { Promotions, SubCategory } from '../container'
 const Home = () => {
     return (
         <div>
-            <Navbar></Navbar>
             <Promotions></Promotions>
             <Trial></Trial>
             <SubCategory name="Value Pack"></SubCategory>
