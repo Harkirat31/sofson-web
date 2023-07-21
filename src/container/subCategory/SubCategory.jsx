@@ -5,7 +5,7 @@ import { ProductSlider } from '../../components'
 import "./sub_category.css"
 
 
-const SubCategory = (props) => {
+const xxSubCategory = (props) => {
     const [products, setProducts] = useState([])
     useEffect(() => {
         let products = [

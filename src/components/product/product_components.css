@@ -1,0 +1,12 @@
+.container_product_image {
+    flex: 1;
+    width: inherit;
+}
+
+.container_product_image img {
+    width: inherit;
+}
+
+.container_product_description {
+    flex: 1;
+}
