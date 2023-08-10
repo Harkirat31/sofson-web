@@ -1,0 +1,21 @@
+.sofson__promotions_slider {
+    flex: 1;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.25rem;
+}
+
+.sofson__promotions_slider-container {
+    display: flex;
+}
+
+.sofson__promotions_slider-container img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+    .sofson__promotions_slider {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,17 @@
+.container_product_image {
+    flex: 1;
+    width: inherit;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.container_product_image img {
+    width: inherit;
+}
+
+.container_product_description {
+    flex: 1.5;
+    padding: 1rem;
+
+}

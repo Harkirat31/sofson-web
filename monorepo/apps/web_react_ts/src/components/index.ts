@@ -1,0 +1,7 @@
+export { default as Navbar } from './navbar/Navbar'
+export { default as Slider } from './slider/Slider'
+export { default as Deal } from './deal/Deal'
+export { default as Trial } from './trial/Trial'
+export { default as ProductSlider } from './productSlider/ProductSlider'
+export { default as ProductImage } from './product/ProductImage'
+export { default as ProductDescription } from './product/ProductDescription'

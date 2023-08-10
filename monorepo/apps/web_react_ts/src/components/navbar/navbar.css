@@ -1,0 +1,60 @@
+.sofson__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-nav);
+    cursor: pointer;
+}
+
+.sofson__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sofson__navbar-links_logo {
+    margin-right: 2rem;
+}
+
+.sofson__navbar-links_logo img {
+    width: 100px;
+}
+
+.sofson__navbar-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sofson__navbar-sign_cart {
+    display: flex;
+    margin-right: 2rem;
+    cursor: pointer;
+    align-items: center;
+}
+
+.sofson__navbar-sign_cart p {
+    color: #fff;
+    font-family: var(--font-family);
+    padding-right: 0.25rem;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    display: contents;
+    justify-content: center;
+}
+
+.sofson__navbar-sign button {
+    padding: 0.25rem 1rem;
+    color: var(--color-nav);
+    font-family: var(--font-family);
+    background: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+.scrollable-container {
+    width: 600px;
+    height: 400px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.scrollable-content {
+    display: inline-block;
+    /* Add your content styling here */
+}
+
+.subCategory_heading {
+    display: flex;
+    justify-content: space-between;
+}
