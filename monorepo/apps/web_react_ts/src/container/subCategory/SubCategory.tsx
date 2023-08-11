@@ -1,36 +1,41 @@
 import React from 'react'
-import Carousel from 'react-bootstrap/Carousel'
 import { useState, useEffect } from 'react'
 import { ProductSlider } from '../../components'
 import "./sub_category.css"
+import { ProductFields } from 'types'
 
 
-const SubCategory = (props) => {
-    const [products, setProducts] = useState([])
+const SubCategory = (props: { name: string }) => {
+    const [products, setProducts] = useState<ProductFields[]>([])
     useEffect(() => {
-        let products = [
+        let products: ProductFields[] = [
             {
                 title: "Glass Cleaner",
+                description: "glass cleaning product",
                 price: "99",
 
             },
             {
                 title: "Toilet Cleaner",
+                description: "toilet cleaning product",
                 price: "199",
 
             },
             {
                 title: "Washing Powder",
+                description: "clothes cleaning product",
                 price: "199",
 
             },
             {
                 title: "Tile Cleaner",
+                description: "tile cleaning product",
                 price: "184",
 
             },
             {
                 title: "Kitchen Cleaner",
+                description: "kitchen cleaning product",
                 price: "154",
 
             }
